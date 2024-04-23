@@ -20,5 +20,11 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - images/
+  fonts:
+    - family: Jersey25
+      fonts:
+        - asset: Fonts/Jersey25-Regular.ttf
 
 
