@@ -24,4 +24,12 @@ class AppWidget{
            fontWeight: FontWeight.w500,
           fontFamily: 'Jersey25');
   }
+
+     static TextStyle semiboldedText(){
+    return  TextStyle(
+          color: Colors.black, 
+          fontSize: 18.0,
+           fontWeight: FontWeight.w500,
+          fontFamily: 'Jersey25');
+  }
 }
