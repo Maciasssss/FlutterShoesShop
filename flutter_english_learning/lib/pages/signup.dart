@@ -3,9 +3,13 @@
 import 'package:flutter_english_learning/pages/login.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter_english_learning/services/database.dart';
 import 'package:random_string/random_string.dart';
 import 'package:flutter_english_learning/widget/widget_support.dart';
 import 'package:flutter_english_learning/pages/BottomNav.dart';
+import 'package:flutter_english_learning/services/shared_pref.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
 class SignUp extends StatefulWidget {
   const SignUp({super.key});
 
@@ -43,7 +47,12 @@ class _SignUpState extends State<SignUp> {
           "Wallet": "0",
           "Id": Id,
         };
-       
+        await DatabaseMethods().addUserDetail(addUserInfo, Id);
+        await SharedPreferenceHelper().saveUserName(namecontroller.text);
+        await SharedPreferenceHelper().saveUserEmail(mailcontroller.text); 
+        await SharedPreferenceHelper().saveUserWallet('0');
+        await SharedPreferenceHelper().saveUserId(Id);
+
 
         // ignore: duplicate_ignore
         // ignore: use_build_context_synchronously
