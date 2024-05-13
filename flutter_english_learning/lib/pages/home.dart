@@ -73,7 +73,7 @@ class _HomeState extends State<Home> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start, //text to left sight
                           children: [
-                            Image.asset("images/casual_boots_1.png", width: 150, height: 150, fit: BoxFit.fill,),
+                            Image.asset("images/Casual_boots_1.png", width: 150, height: 150, fit: BoxFit.fill,),
                             Text("Casual boots",
                               style: AppWidget.semiboldedText(),),
                             SizedBox(height: 5.0,),
@@ -98,7 +98,7 @@ class _HomeState extends State<Home> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start, //text to left sight
                         children: [
-                          Image.asset("images/casual_boots_2.png", width: 150, height: 150, fit: BoxFit.cover,),
+                          Image.asset("images/Casual_boots_2.png", width: 150, height: 150, fit: BoxFit.cover,),
                           Text("Casual boots",
                             style: AppWidget.semiboldedText(),),
                           SizedBox(height: 5.0,),
@@ -122,7 +122,7 @@ class _HomeState extends State<Home> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start, //text to left sight
                         children: [
-                          Image.asset("images/casual_boots_2.png", width: 150, height: 150, fit: BoxFit.cover,),
+                          Image.asset("images/Casual_boots_2.png", width: 150, height: 150, fit: BoxFit.fill,),
                           Text("Casual boots",
                             style: AppWidget.semiboldedText(),),
                           SizedBox(height: 5.0,),
@@ -153,7 +153,7 @@ class _HomeState extends State<Home> {
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Image.asset("images/Casual_boots_2.png", height: 150, width: 150,fit: BoxFit.cover,),
+                          Image.asset("images/Casual_boots_2.png", height: 150, width: 125,fit: BoxFit.fill,),
                           SizedBox(width: 20.0,),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -190,7 +190,7 @@ class _HomeState extends State<Home> {
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Image.asset("images/Casual_boots_1.png", height: 150, width: 150, fit: BoxFit.fill,),
+                          Image.asset("images/Casual_boots_1.png", height: 150, width: 125, fit: BoxFit.fill,),
                           SizedBox(width: 20.0,),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -227,7 +227,7 @@ class _HomeState extends State<Home> {
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Image.asset("images/Casual_boots.png", height: 150, width: 150, fit: BoxFit.fill,),
+                          Image.asset("images/Casual_boots.png", height: 150, width: 125, fit: BoxFit.fill,),
                           SizedBox(width: 20.0,),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
