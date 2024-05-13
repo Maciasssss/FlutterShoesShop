@@ -5,14 +5,14 @@ import 'package:flutter_english_learning/pages/order.dart';
 import 'package:flutter_english_learning/pages/profile.dart';
 import 'package:flutter_english_learning/pages/wallet.dart';
 
-class BottomNav extends StatefulWidget {
-  const BottomNav({super.key});
+class Bottomnav extends StatefulWidget {
+  const Bottomnav({super.key});
 
   @override
-  State<BottomNav> createState() => _BottomNavState();
+  State<Bottomnav> createState() => _BottomnavState();
 }
 
-class _BottomNavState extends State<BottomNav> {
+class _BottomnavState extends State<Bottomnav> {
   int currentTabindex = 0;
   late List<Widget> pages;
   late Widget curreentPage;
@@ -44,7 +44,7 @@ class _BottomNavState extends State<BottomNav> {
         onTap: (int index)
         {
           setState(() {
-            currentTabindex==index;
+            currentTabindex = index;
           });
         },
         items: 
