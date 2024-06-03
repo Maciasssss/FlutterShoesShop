@@ -10,4 +10,8 @@ class DatabaseMethods{
     return await FirebaseFirestore.instance.collection("users").doc(id).update({"Wallet":amount});
   }
   
+  Future addShoesItem(Map<String,dynamic> userInfoMap, String name)async{
+
+    return await FirebaseFirestore.instance.collection(name).add(userInfoMap);
+  }
 }
