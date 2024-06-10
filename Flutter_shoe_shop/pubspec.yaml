@@ -1,0 +1,38 @@
+name: flutter_Shoe_shop
+description: "A new Flutter project."
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  curved_navigation_bar: ^1.0.3
+  firebase_core: ^2.31.0
+  firebase_auth: ^4.19.5
+  cloud_firestore: ^4.17.3
+  random_string: ^2.3.1
+  flutter_stripe: ^10.1.1
+  http: ^1.2.1
+  shared_preferences: ^2.2.3
+  firebase_storage: ^11.7.5
+  image_picker: ^1.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - images/
+  fonts:
+    - family: Jersey25
+      fonts:
+        - asset: Fonts/Jersey25-Regular.ttf
+
+
