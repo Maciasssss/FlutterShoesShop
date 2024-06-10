@@ -1,2 +1,1 @@
-String publishableKey="pk_test_51PFwBJ2LIOILYdKl9bVZn9xvCrUe7zfraM2dm8czdrOFoMvbEYeBriWF4rCafhuAqKBUfnYBP0tCxbhtoTajOrIn00r7sS2ab9";
-String secretKey = "sk_test_51PFwBJ2LIOILYdKlbuEtrWjk9qxVPBNTpXnxI3gLZosEgrwCVf1VXL216GbkjTYA1hKLrIUaacl72OlFyS2Rzbjs00sljPD7U6";
+Here Enter your firebase keys
