@@ -4,6 +4,7 @@ import 'package:flutter_Shoe_shop/pages/home.dart';
 import 'package:flutter_Shoe_shop/pages/order.dart';
 import 'package:flutter_Shoe_shop/pages/profile.dart';
 import 'package:flutter_Shoe_shop/pages/wallet.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Bottomnav extends StatefulWidget {
   const Bottomnav({super.key});
@@ -49,12 +50,12 @@ class _BottomnavState extends State<Bottomnav> {
         },
         items: 
       [Icon(
-        Icons.home_outlined, 
+        FontAwesomeIcons.house, 
         color: Colors.white,
         ),
-        Icon(Icons.shopping_bag_outlined, color: Colors.white,),
-        Icon(Icons.wallet_outlined, color: Colors.white,),
-        Icon(Icons.person_outline, color: Colors.white,)
+        Icon(FontAwesomeIcons.bagShopping, color: Colors.white,),
+        Icon(FontAwesomeIcons.wallet, color: Colors.white,),
+        Icon(FontAwesomeIcons.person, color: Colors.white,)
         ],),
         body: pages[currentTabindex],
     );
