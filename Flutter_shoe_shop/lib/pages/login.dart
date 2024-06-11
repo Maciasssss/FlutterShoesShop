@@ -1,6 +1,7 @@
 // ignore_for_file: use_build_context_synchronously
 
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../widget/widget_support.dart';
 import 'package:flutter_Shoe_shop/pages/BottomNav.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -128,7 +129,7 @@ Widget build(BuildContext context) {
                               decoration: InputDecoration(
                                   hintText: 'Email',
                                   hintStyle: AppWidget.semiboldedText(),
-                                  prefixIcon: Icon(Icons.email_outlined)),
+                                  prefixIcon: Icon(FontAwesomeIcons.mailchimp)),
                             ),
                             SizedBox(
                               height: 15.0,
@@ -145,7 +146,7 @@ Widget build(BuildContext context) {
                               decoration: InputDecoration(
                                   hintText: 'Password',
                                   hintStyle: AppWidget.semiboldedText(),
-                                  prefixIcon: Icon(Icons.password_outlined)),
+                                  prefixIcon: Icon(FontAwesomeIcons.code)),
                             ),
                             SizedBox(
                               height: 40.0,

@@ -4,6 +4,7 @@ import 'package:flutter_Shoe_shop/pages/login.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_Shoe_shop/services/database.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:random_string/random_string.dart';
 import 'package:flutter_Shoe_shop/widget/widget_support.dart';
 import 'package:flutter_Shoe_shop/pages/BottomNav.dart';
@@ -163,7 +164,7 @@ Widget build(BuildContext context) {
                               decoration: InputDecoration(
                                   hintText: 'Name',
                                   hintStyle: AppWidget.semiboldedText(),
-                                  prefixIcon: Icon(Icons.person_outlined)),
+                                  prefixIcon: Icon(FontAwesomeIcons.person)),
                             ),
                             SizedBox(
                               height: 10.0,
@@ -179,7 +180,7 @@ Widget build(BuildContext context) {
                               decoration: InputDecoration(
                                   hintText: 'Email',
                                   hintStyle: AppWidget.semiboldedText(),
-                                  prefixIcon: Icon(Icons.email_outlined)),
+                                  prefixIcon: Icon(FontAwesomeIcons.mailchimp)),
                             ),
                             SizedBox(
                               height: 10.0,
@@ -196,7 +197,7 @@ Widget build(BuildContext context) {
                               decoration: InputDecoration(
                                   hintText: 'Password',
                                   hintStyle: AppWidget.semiboldedText(),
-                                  prefixIcon: Icon(Icons.password_outlined)),
+                                  prefixIcon: Icon(FontAwesomeIcons.code)),
                             ),
                             SizedBox(
                               height: 30.0,
