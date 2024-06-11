@@ -112,12 +112,12 @@ class _SignUpState extends State<SignUp> {
               margin: EdgeInsets.only(top: 60.0, left: 20.0, right: 20.0),
               child: Column(
                 children: [
-                  Center(
-                      child: Image.asset(
-                    "images/logo.png",
-                    width: MediaQuery.of(context).size.width / 1.5,
-                    fit: BoxFit.cover,
-                  )),
+                  // Center(
+                  //     child: Image.asset(
+                  //   "assets/images/logo.png",
+                  //   width: MediaQuery.of(context).size.width / 1.5,
+                  //   fit: BoxFit.cover,
+                  // )),
                   SizedBox(
                     height: 50.0,
                   ),

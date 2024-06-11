@@ -26,7 +26,7 @@ class _DetailsState extends State<Details> {
             Navigator.pop(context);
           } ,
           child: Icon(Icons.arrow_back_ios_new_outlined,color: Colors.black,)),
-          Image.asset("images/Casual_boots_1.png", width: MediaQuery.of(context).size.width, height: MediaQuery.of(context).size.height/2.5,fit: BoxFit.fill,),
+          Image.asset("assets/images/Casual_boots_1.png", width: MediaQuery.of(context).size.width, height: MediaQuery.of(context).size.height/2.5,fit: BoxFit.fill,),
           SizedBox(height: 10.0,),
          
           Row(

@@ -4,6 +4,7 @@ import 'package:flutter_english_learning/pages/home.dart';
 import 'package:flutter_english_learning/pages/order.dart';
 import 'package:flutter_english_learning/pages/profile.dart';
 import 'package:flutter_english_learning/pages/wallet.dart';
+import 'package:flutter_english_learning/services/shared_pref.dart';
 
 class Bottomnav extends StatefulWidget {
   const Bottomnav({super.key});
@@ -20,6 +21,7 @@ class _BottomnavState extends State<Bottomnav> {
   late Profile profile;
   late Order order;
   late Wallet wallet;
+  String? id;
 
   @override
   void initState()
@@ -42,7 +44,7 @@ class _BottomnavState extends State<Bottomnav> {
         color: Colors.black,
         animationDuration: Duration(microseconds: 500),
         onTap: (int index)
-        {
+        async {
           setState(() {
             currentTabindex = index;
           });

@@ -2,12 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_english_learning/services/shared_pref.dart';
 import 'dart:async';
 import 'dart:convert';
-import 'package:flutter_stripe/flutter_stripe.dart';
+// import 'package:flutter_stripe/flutter_stripe.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter_english_learning/services/database.dart';
 import 'package:flutter_english_learning/widget/widget_support.dart';
 import 'package:flutter_english_learning/widget/app_constant.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class Wallet extends StatefulWidget {
   const Wallet({super.key});
@@ -69,12 +68,12 @@ class _WalletState extends State<Wallet> {
                     decoration: BoxDecoration(color: Color(0xFFF2F2F2)),
                     child: Row(
                       children: [
-                        Image.asset(
-                          "images/wallet.png",
-                          height: 60,
-                          width: 60,
-                          fit: BoxFit.cover,
-                        ),
+                        // Image.asset(
+                        //   "assets/images/wallet.png",
+                        //   height: 60,
+                        //   width: 60,
+                        //   fit: BoxFit.cover,
+                        // ),
                         SizedBox(
                           width: 40.0,
                         ),
@@ -211,66 +210,66 @@ class _WalletState extends State<Wallet> {
     try {
       paymentIntent = await createPaymentIntent(amount, 'USD');
       //Payment Sheet
-      await Stripe.instance
-          .initPaymentSheet(
-              paymentSheetParameters: SetupPaymentSheetParameters(
-                  paymentIntentClientSecret: paymentIntent!['client_secret'],
-                  // applePay: const PaymentSheetApplePay(merchantCountryCode: '+92',),
-                  // googlePay: const PaymentSheetGooglePay(testEnv: true, currencyCode: "US", merchantCountryCode: "+92"),
-                  style: ThemeMode.dark,
-                  merchantDisplayName: 'Adnan'))
-          .then((value) {});
+      // await Stripe.instance
+      //     .initPaymentSheet(
+      //         paymentSheetParameters: SetupPaymentSheetParameters(
+      //             paymentIntentClientSecret: paymentIntent!['client_secret'],
+      //             // applePay: const PaymentSheetApplePay(merchantCountryCode: '+92',),
+      //             // googlePay: const PaymentSheetGooglePay(testEnv: true, currencyCode: "US", merchantCountryCode: "+92"),
+      //             style: ThemeMode.dark,
+      //             merchantDisplayName: 'Adnan'))
+      //     .then((value) {});
 
       ///now finally display payment sheeet
-      displayPaymentSheet(amount);
+      // displayPaymentSheet(amount);
     } catch (e, s) {
       print('exception:$e$s');
     }
   }
 
-  displayPaymentSheet(String amount) async {
-    try {
-      await Stripe.instance.presentPaymentSheet().then((value) async {
-        add = int.parse(wallet!) + int.parse(amount);
-        await SharedPreferenceHelper().saveUserWallet(add.toString());
-        await DatabaseMethods().UpdateUserwallet(id!, add.toString());
-        // ignore: use_build_context_synchronously
-        showDialog(
-            context: context,
-            builder: (_) => AlertDialog(
-                  content: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Row(
-                        children: const [
-                          Icon(
-                            Icons.check_circle,
-                            color: Colors.green,
-                          ),
-                          Text("Payment Successfull"),
-                        ],
-                      ),
-                    ],
-                  ),
-                ));
-        await getthesharedpref();
-        // ignore: use_build_context_synchronously
+  // displayPaymentSheet(String amount) async {
+  //   try {
+  //     await Stripe.instance.presentPaymentSheet().then((value) async {
+  //       add = int.parse(wallet!) + int.parse(amount);
+  //       await SharedPreferenceHelper().saveUserWallet(add.toString());
+  //       await DatabaseMethods().UpdateUserwallet(id!, add.toString());
+  //       // ignore: use_build_context_synchronously
+  //       showDialog(
+  //           context: context,
+  //           builder: (_) => AlertDialog(
+  //                 content: Column(
+  //                   mainAxisSize: MainAxisSize.min,
+  //                   children: [
+  //                     Row(
+  //                       children: const [
+  //                         Icon(
+  //                           Icons.check_circle,
+  //                           color: Colors.green,
+  //                         ),
+  //                         Text("Payment Successfull"),
+  //                       ],
+  //                     ),
+  //                   ],
+  //                 ),
+  //               ));
+  //       await getthesharedpref();
+  //       // ignore: use_build_context_synchronously
 
-        paymentIntent = null;
-      }).onError((error, stackTrace) {
-        print('Error is:--->$error $stackTrace');
-      });
-    } on StripeException catch (e) {
-      print('Error is:---> $e');
-      showDialog(
-          context: context,
-          builder: (_) => const AlertDialog(
-                content: Text("Cancelled "),
-              ));
-    } catch (e) {
-      print('$e');
-    }
-  }
+  //       paymentIntent = null;
+  //     }).onError((error, stackTrace) {
+  //       print('Error is:--->$error $stackTrace');
+  //     });
+  //   } on StripeException catch (e) {
+  //     print('Error is:---> $e');
+  //     showDialog(
+  //         context: context,
+  //         builder: (_) => const AlertDialog(
+  //               content: Text("Cancelled "),
+  //             ));
+  //   } catch (e) {
+  //     print('$e');
+  //   }
+  // }
 
   //  Future<Map<String, dynamic>>
   createPaymentIntent(String amount, String currency) async {

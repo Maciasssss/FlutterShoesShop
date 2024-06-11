@@ -73,7 +73,7 @@ class _HomeState extends State<Home> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start, //text to left sight
                           children: [
-                            Image.asset("images/Casual_boots_1.png", width: 150, height: 150, fit: BoxFit.fill,),
+                            Image.asset("assets/images/Casual_boots_1.png", width: 150, height: 150, fit: BoxFit.fill,),
                             Text("Casual boots",
                               style: AppWidget.semiboldedText(),),
                             SizedBox(height: 5.0,),
@@ -98,7 +98,7 @@ class _HomeState extends State<Home> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start, //text to left sight
                         children: [
-                          Image.asset("images/Casual_boots_2.png", width: 150, height: 150, fit: BoxFit.cover,),
+                          Image.asset("assets/images/Casual_boots_2.png", width: 150, height: 150, fit: BoxFit.cover,),
                           Text("Casual boots",
                             style: AppWidget.semiboldedText(),),
                           SizedBox(height: 5.0,),
@@ -122,7 +122,7 @@ class _HomeState extends State<Home> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start, //text to left sight
                         children: [
-                          Image.asset("images/Casual_boots_2.png", width: 150, height: 150, fit: BoxFit.fill,),
+                          Image.asset("assets/images/Casual_boots_2.png", width: 150, height: 150, fit: BoxFit.fill,),
                           Text("Casual boots",
                             style: AppWidget.semiboldedText(),),
                           SizedBox(height: 5.0,),
@@ -153,7 +153,7 @@ class _HomeState extends State<Home> {
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Image.asset("images/Casual_boots_2.png", height: 150, width: 125,fit: BoxFit.fill,),
+                          Image.asset("assets/images/Casual_boots_2.png", height: 150, width: 125,fit: BoxFit.fill,),
                           SizedBox(width: 20.0,),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -190,7 +190,7 @@ class _HomeState extends State<Home> {
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Image.asset("images/Casual_boots_1.png", height: 150, width: 125, fit: BoxFit.fill,),
+                          Image.asset("assets/images/Casual_boots_1.png", height: 150, width: 125, fit: BoxFit.fill,),
                           SizedBox(width: 20.0,),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -227,7 +227,7 @@ class _HomeState extends State<Home> {
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Image.asset("images/Casual_boots.png", height: 150, width: 125, fit: BoxFit.fill,),
+                          Image.asset("assets/images/Casual_boots.png", height: 150, width: 125, fit: BoxFit.fill,),
                           SizedBox(width: 20.0,),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -267,7 +267,7 @@ class _HomeState extends State<Home> {
 
 
 
-// Images on home pages which are categories for diffrent kinds of boots, "Selectedmenu"
+// assets/images on home pages which are categories for diffrent kinds of boots, "Selectedmenu"
   Widget showItem(){
     return     Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -297,7 +297,7 @@ class _HomeState extends State<Home> {
                       ),
                       padding: EdgeInsets.all(8),
                       child: Image.asset(
-                        "images/Casual_boots.png",
+                        "assets/images/Casual_boots.png",
                         height: 60,
                         width: 60,
                         fit: BoxFit.cover,
@@ -330,7 +330,7 @@ class _HomeState extends State<Home> {
                       ),
                       padding: EdgeInsets.all(8),
                       child: Image.asset(
-                        "images/High-heel_boots.png",
+                        "assets/images/High-heel_boots.png",
                         height: 60,
                         width: 60,
                         fit: BoxFit.cover,
@@ -363,7 +363,7 @@ class _HomeState extends State<Home> {
                       ),
                       padding: EdgeInsets.all(8),
                       child: Image.asset(
-                        "images/Running_boots.png",
+                        "assets/images/Running_boots.png",
                         height: 60,
                         width: 60,
                         fit: BoxFit.cover,
@@ -396,7 +396,7 @@ class _HomeState extends State<Home> {
                       ),
                       padding: EdgeInsets.all(8),
                       child: Image.asset(
-                        "images/Tracking_boots.png",
+                        "assets/images/Tracking_boots.png",
                         height: 60,
                         width: 60,
                         fit: BoxFit.cover,

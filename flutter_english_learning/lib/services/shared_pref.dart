@@ -1,5 +1,7 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../main.dart';
+
 class SharedPreferenceHelper{
   static String userIdKey="USERKEY";
   static String userNameKey="USERNAMEKEY";
@@ -44,9 +46,8 @@ class SharedPreferenceHelper{
     return prefs.getString(userEmailKey);
   }
 
-   Future<String?> getUserId()async{
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    return prefs.getString(userIdKey);
+   String? getUserId() {
+    return prefs!.getString(userIdKey);
   }
 
    Future<String?> getUserWallet()async{
